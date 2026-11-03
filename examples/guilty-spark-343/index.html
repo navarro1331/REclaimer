@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b111b">
+  <title>Guilty Spark 343</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#prompt">Skip to message</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Conversations">
+      <a class="brand" href="/" aria-label="Guilty Spark 343 home">
+        <span class="brand-orb" aria-hidden="true"><span></span></span>
+        <span class="brand-name">Guilty Spark <strong>343</strong><small>YOUR LOCAL INTELLIGENCE</small></span>
+      </a>
+      <button type="button" class="button new-chat" id="new-chat"><span aria-hidden="true">＋</span> New conversation <kbd>N</kbd></button>
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="thread-search" type="search" placeholder="Find a conversation" aria-label="Find a conversation" autocomplete="off"></label>
+      <div class="section-label">YOUR CONVERSATIONS <span id="thread-count">0</span></div>
+      <nav id="thread-list" class="thread-list" aria-label="Conversation history"></nav>
+      <div class="sidebar-bottom">
+        <div class="workspace-card"><span class="workspace-symbol" aria-hidden="true">◈</span><div><strong>Personal workspace</strong><span>Saved in this browser</span></div><span class="local-dot" aria-hidden="true"></span></div>
+        <div class="sidebar-tools">
+          <button type="button" id="import-button" title="Import chats or characters">↥ <span>Import</span></button>
+          <button type="button" id="export-button" title="Export a portable backup">↧ <span>Export</span></button>
+          <button type="button" id="help-button" title="About this workspace">ⓘ <span>About</span></button>
+        </div>
+      </div>
+    </aside>
+    <button class="sidebar-scrim" id="sidebar-scrim" type="button" aria-label="Close conversation sidebar" tabindex="-1" hidden></button>
+    <main class="main-panel" id="main-panel">
+      <header class="topbar">
+        <div class="conversation-heading"><button class="icon-button mobile-menu" id="menu-button" type="button" aria-label="Open conversations" aria-expanded="false">☰</button><div><div class="eyebrow">GUILTY SPARK 343</div><h1 id="thread-title">New conversation</h1></div></div>
+        <div class="topbar-actions">
+          <span class="connection-pill" id="connection-pill"><span class="status-dot" aria-hidden="true"></span><span id="connection-text">Connecting</span></span>
+          <button class="icon-button" id="settings-button" type="button" aria-label="Open persona and generation settings" title="Persona & settings">⚙</button>
+        </div>
+      </header>
+      <section class="configuration-bar" aria-label="Conversation configuration">
+        <label class="select-control model-control"><span class="control-glyph" aria-hidden="true">⬡</span><span class="select-text"><span class="control-label">MODEL</span><select id="model-select" aria-label="Select a local model"><option value="">Loading models…</option></select></span></label>
+        <span class="control-divider" aria-hidden="true"></span>
+        <label class="select-control character-control"><span class="control-glyph" aria-hidden="true">✧</span><span class="select-text"><span class="control-label">CHARACTER</span><select id="character-select" aria-label="Select a character"><option value="">Default assistant</option></select></span></label>
+        <button class="text-button" id="characters-button" type="button">Manage characters <span aria-hidden="true">↗</span></button>
+      </section>
+      <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+      <div class="transcript" id="transcript" tabindex="0" aria-label="Conversation messages">
+        <section class="welcome" id="welcome">
+          <div class="orb-scene" aria-hidden="true"><div class="orb-orbit orbit-one"></div><div class="orb-orbit orbit-two"></div><div class="spark-orb"><div class="orb-shell"></div><div class="orb-lens"><div class="orb-core"></div></div></div><div class="orb-shadow"></div><span class="orb-coordinate coordinate-one">343 / ONLINE</span><span class="orb-coordinate coordinate-two">LOCAL SYSTEM</span></div>
+          <div class="welcome-kicker"><span></span> A LITTLE SPARK. A NEW POSSIBILITY.</div>
+          <h2>What shall we explore?</h2>
+          <p>Your models. Your characters. Your conversation.<br>A quiet place to think, create, and work things out.</p>
+          <div class="suggestion-grid">
+            <button type="button" class="suggestion" data-prompt="Help me think through an idea. Ask me one useful question to get started."><span class="suggestion-icon">✧</span><strong>Think something through</strong><span>Give your next idea some room.</span><span class="suggestion-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="suggestion" data-prompt="Help me turn a rough thought into a clear first draft. Ask me what I want to write."><span class="suggestion-icon">⌁</span><strong>Make a first draft</strong><span>Find the words you’re looking for.</span><span class="suggestion-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="suggestion" data-prompt="Teach me something interesting, then help me explore it with a practical example."><span class="suggestion-icon">⌘</span><strong>Follow your curiosity</strong><span>Understand something a little better.</span><span class="suggestion-arrow" aria-hidden="true">↗</span></button>
+          </div>
+        </section>
+        <div class="message-list" id="message-list"></div>
+      </div>
+      <footer class="composer-area">
+        <form id="chat-form" class="composer">
+          <label class="sr-only" for="prompt">Message Guilty Spark 343</label>
+          <textarea id="prompt" rows="1" maxlength="50000" placeholder="Message Guilty Spark 343…" autocomplete="off"></textarea>
+          <div class="composer-toolbar"><div class="composer-context"><span class="tiny-spark" aria-hidden="true">✦</span><span id="composer-context">Your next thought starts here</span></div><div class="composer-buttons"><button id="stop-button" class="stop-button" type="button" hidden><span aria-hidden="true">■</span> Stop</button><button id="send-button" class="send-button" type="submit" aria-label="Send message" title="Send message (Enter)"><span aria-hidden="true">↑</span></button></div></div>
+        </form>
+        <div class="composer-footnote"><span>History stays in this browser. <button type="button" id="privacy-button">How it works</button></span><span class="keyboard-hint"><kbd>Enter</kbd> to send <span>·</span> <kbd>Shift Enter</kbd> for a new line</span></div>
+      </footer>
+    </main>
+  </div>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+  <dialog id="settings-dialog" class="dialog">
+    <div class="dialog-heading"><div><div class="eyebrow">MAKE IT YOURS</div><h2>Persona & settings</h2></div><button type="button" class="icon-button close-dialog" aria-label="Close settings">×</button></div>
+    <form id="settings-form">
+      <label class="field">Your persona<textarea id="persona-input" rows="5" maxlength="20000" placeholder="What should the assistant know about you, your preferences, or your role?"></textarea><small>Included with future messages. Keep passwords and other secrets out of your persona.</small></label>
+      <div class="field-grid"><label class="field">Temperature<input id="temperature-input" type="number" min="0" max="2" step="0.05" value="0.7"><small>Lower is more focused; higher is more varied.</small></label><label class="field">Response token limit<input id="tokens-input" type="number" min="1" max="32768" step="1" value="256"><small>Longer responses take more time.</small></label></div>
+      <div class="dialog-actions"><button type="button" class="button secondary close-dialog">Cancel</button><button class="button primary" type="submit">Save settings</button></div>
+    </form>
+  </dialog>
+  <dialog id="characters-dialog" class="dialog character-dialog">
+    <div class="dialog-heading"><div><div class="eyebrow">A DIFFERENT PERSPECTIVE</div><h2>Characters</h2></div><button type="button" class="icon-button close-dialog" aria-label="Close characters">×</button></div>
+    <div class="character-editor-top"><label class="field">Choose a character<select id="character-editor-select"><option value="">Create a new character</option></select></label><button type="button" class="button secondary" id="new-character">＋ New</button></div>
+    <form id="character-form">
+      <label class="field">Name<input id="character-name" maxlength="200" required placeholder="Give your character a name"></label>
+      <label class="field">Description<textarea id="character-description" rows="2" maxlength="20000" placeholder="Who is this character?"></textarea></label>
+      <div class="field-grid"><label class="field">Personality<textarea id="character-personality" rows="3" maxlength="20000" placeholder="How they think and speak"></textarea></label><label class="field">Scenario<textarea id="character-scenario" rows="3" maxlength="20000" placeholder="The context for your conversation"></textarea></label></div>
+      <label class="field">Greeting<textarea id="character-greeting" rows="2" maxlength="20000" placeholder="An opening message for a new conversation"></textarea><small>Added only when starting a new conversation with this character.</small></label>
+      <label class="field">System instructions<textarea id="character-system" rows="3" maxlength="20000" placeholder="Optional instructions for the assistant"></textarea></label>
+      <p class="form-note">Character settings guide future replies. Your model determines how closely they are followed.</p>
+      <div class="dialog-actions"><button type="button" class="text-button danger" id="delete-character" hidden>Delete character</button><button type="button" class="button secondary close-dialog">Cancel</button><button class="button primary" type="submit">Save & select</button></div>
+    </form>
+  </dialog>
+  <dialog id="about-dialog" class="dialog about-dialog">
+    <div class="dialog-heading"><div><div class="eyebrow">BUILT AROUND YOUR MODELS</div><h2>Meet Guilty Spark 343</h2></div><button type="button" class="icon-button close-dialog" aria-label="Close about">×</button></div>
+    <p>An independent conversation workspace combining a local Ollama-compatible runtime with chat, character, persona, and history features inspired by GobboNet.</p>
+    <div class="about-fact"><span aria-hidden="true">◈</span><div><strong>A local workspace</strong><p>Chats, characters, persona, and preferences are saved in this browser’s local storage. Clearing browser data removes them. Export a backup to keep a portable copy.</p></div></div>
+    <div class="about-fact"><span aria-hidden="true">⬡</span><div><strong>One shared runtime</strong><p>Messages are sent to this server’s native chat API. Selecting a model changes the next request. Stop cancels the active request; replies depend on the selected model and available hardware.</p></div></div>
+    <div class="about-fact"><span aria-hidden="true">↥</span><div><strong>Imports with visible limits</strong><p>Supported JSON backups and character data can be imported. Advanced original-app features are not reproduced in full. Import warnings identify omitted or unsupported data; this workspace does not claim full GobboNet equivalence.</p></div></div>
+    <p class="platform-info" id="platform-info">Runtime details will appear when the server is available.</p>
+    <div class="dialog-actions"><button type="button" class="button primary close-dialog">Got it</button></div>
+  </dialog>
+  <div class="sr-only" id="live-status" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

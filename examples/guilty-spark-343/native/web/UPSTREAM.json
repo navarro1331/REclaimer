@@ -1,0 +1,180 @@
+{
+  "project": "GobboNet",
+  "repository": "https://github.com/ElodineOfficial/GobboNet",
+  "sourceCommit": "781eb43418297afbb2a75c5a4ff81a0b17c2b95d",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "chat.html",
+      "sha256": "bba0ee32ecc7fc14f7768aeac9bb6037446a388ab88a5bf859bcd92baf197282"
+    },
+    {
+      "path": "default-characters.json",
+      "sha256": "3e45d799e47a86d47a92ec7cbe813569f19448765ab10580d061e038e0477fc4"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cf52b964b185fa914027b200f67a9f1f258f663a9e9fc2bca5b9afd45d2ea507"
+    },
+    {
+      "path": "js/01-config.js",
+      "sha256": "c9af777384c4e49a586f0fdf73ffe468dbb7fc7aebbdf9b35bc4fe5f25be10f0"
+    },
+    {
+      "path": "js/02-model.js",
+      "sha256": "b1d9d1c5b9ecbb7a642c01112b49624770f2a45d65d93e8f6adacbb9438726b0"
+    },
+    {
+      "path": "js/03-generation.js",
+      "sha256": "5b0e927d2f1e1d4442a0873ee786b606eb6052aada9df661307f27381d80204e"
+    },
+    {
+      "path": "js/04-state.js",
+      "sha256": "4635ab74c2e461c7a7fc7ebffb6b1acfd7839235120671a7548128acfe328453"
+    },
+    {
+      "path": "js/05-persistence.js",
+      "sha256": "1fba8c9719a59bd22b10ebc5cebbb0240b59753fb1f4988fe8c5e86173713f6f"
+    },
+    {
+      "path": "js/06-state-sync.js",
+      "sha256": "cdddb73550dd7e5ee749bae23b6f1392d22366ea1fe66a876f42df288752e591"
+    },
+    {
+      "path": "js/07-prompt.js",
+      "sha256": "b8dca608f3847519aff2b561d14726ba5773203802101586b58746f11039edc9"
+    },
+    {
+      "path": "js/08-rag.js",
+      "sha256": "8b1b807fe4f15ce1079bdd7aa950f4ed52606c8729d583a737b6d09c2b890b95"
+    },
+    {
+      "path": "js/09-threads.js",
+      "sha256": "82845a43dafbb92ada6abc8b590f962686219fc835aff43ecd67a7ddf9f66301"
+    },
+    {
+      "path": "js/10-chat.js",
+      "sha256": "8b5a18274988120e8713326006702c050cd451f59c064d4f3cadcc38808a5ecd"
+    },
+    {
+      "path": "js/11-search.js",
+      "sha256": "0691c66d424d10a3155abead39cba35cde452626cf9e14c39e250bead429d812"
+    },
+    {
+      "path": "js/12-render.js",
+      "sha256": "7721ec697f95ad0d4bee81c27957225b76223015c9391b35e63ccdb547ec4f2f"
+    },
+    {
+      "path": "js/13-dashboard.js",
+      "sha256": "2895a87c29986016670f4416628476ab001534c8f4124062eea7a7844df5eb5d"
+    },
+    {
+      "path": "js/14-scroll.js",
+      "sha256": "3e0aac87fde3791f117c07630d67be47d8da570d8d6d3bf0e5783692c862c205"
+    },
+    {
+      "path": "js/15-cards.js",
+      "sha256": "ebbe44b74d1eac1bcca7ae6777ad0a578535722a029d497f4c2055723e95d825"
+    },
+    {
+      "path": "js/16-card-io.js",
+      "sha256": "c54b960ebc16275de27e7e22662ac02132cd8b54a29603e2c54619ec77cbec1e"
+    },
+    {
+      "path": "js/17-personas.js",
+      "sha256": "8552631d4e4fdfd0dbce13f7fa49daec2731d7f1c796a3a786b65794e852005c"
+    },
+    {
+      "path": "js/18-utils.js",
+      "sha256": "239be4e66e085b7bd9e1fc014d1f8021d8d8ad13d03664eb1906dc5b6c074aec"
+    },
+    {
+      "path": "js/19-extensions.js",
+      "sha256": "47a00fbaf76b305db14283f5dc64b2480d2a27efb6ce345114b953b4f84a0e9a"
+    },
+    {
+      "path": "js/20-macros.js",
+      "sha256": "f3701387570aa92887e19875dd1eb1f6f0367572fbbfffbd6ced4f72f0890654"
+    },
+    {
+      "path": "js/21-data.js",
+      "sha256": "f9ee8a972cb23a99638ccff532cac1b5e179068c2dda542b0296d92c37f9a50b"
+    },
+    {
+      "path": "js/22-scheduler.js",
+      "sha256": "00ca46ddebda1c5fa932f9bf64791f225083133eda173cf765c0c5d302c98c5c"
+    },
+    {
+      "path": "js/23-card-code.js",
+      "sha256": "797164d6ac716c11095e3c3768ca18eb26a718c8e4e2d97dab6dff886f8485f3"
+    },
+    {
+      "path": "js/24-boot.js",
+      "sha256": "af0118d3adc8295a287d2e916ee73bb523e9041add5929517235c9b42f05bb41"
+    },
+    {
+      "path": "css/01-tokens.css",
+      "sha256": "38075ecfc2fbf75d6899924a54d7cb494f375881ac9bf4e0c99bb11fba7a314f"
+    },
+    {
+      "path": "css/02-layout.css",
+      "sha256": "47372d220b1c384c42a97ef1e1a3f24185bbb078d4ffc99446d5f0a279916a1a"
+    },
+    {
+      "path": "css/03-threads.css",
+      "sha256": "18add84adaba1580ac63b1a878da9c8e83dc6ad192cd95df3cd9dea942114589"
+    },
+    {
+      "path": "css/04-chat.css",
+      "sha256": "dfbccdda5dca96a9b722e12e519f865ee92850c2482a4c63c8bbfe91d03369d1"
+    },
+    {
+      "path": "css/05-modals.css",
+      "sha256": "43b14918612b9d1e7d9ce9e9f3e959030da3d33c107902039d5005a9c6db7f40"
+    },
+    {
+      "path": "css/06-cards.css",
+      "sha256": "23ce80bcc69d85134da3169814c0f56442fe843af56a49a0f0419c12255bf2f8"
+    },
+    {
+      "path": "css/07-message-extras.css",
+      "sha256": "a6463e7d31f3605ecef24cb99c0feece79f52940a01798475eed956bfe0007fc"
+    },
+    {
+      "path": "css/08-pickers.css",
+      "sha256": "f4207eb225c4bdb4f857de1b50c1d3c5f0118022419d46a64231c90921163d0d"
+    },
+    {
+      "path": "css/09-dashboard.css",
+      "sha256": "fce9456a9825483038ad0c38662c07a4fbde793724c97091c92d04f7e1669dce"
+    },
+    {
+      "path": "css/10-responsive.css",
+      "sha256": "adea96bcd13a0e1ffcf66db0ff05be33582fd44ff35e87666b5a5f4ea50f620d"
+    },
+    {
+      "path": "css/11-panels.css",
+      "sha256": "68a4e716550847d907b0d4d2aba0f8e8ed8294f4190ef91e3d6f0905624ee722"
+    },
+    {
+      "path": "css/12-organisation.css",
+      "sha256": "b5c08ef4a9d1acd13e49c232b07ee6179162b6e17c5e7de21d4a4c5dbe81cc32"
+    },
+    {
+      "path": "css/13-components.css",
+      "sha256": "ebf5e88594fbeec8e01f6fcf7250056f6c33ed5a103e169aa34a1a6530d11cd0"
+    },
+    {
+      "path": "css/14-card-code.css",
+      "sha256": "a439e71e875b6a3998cfe5cd2de5e58daa37d1345b5cb85d6f2f5ac75c94fcbb"
+    },
+    {
+      "path": "css/15-lore-view.css",
+      "sha256": "996c9ebb24d9a52f7c6afa0e536c6a179e96ebffba66504d445afa539d8bcb44"
+    },
+    {
+      "path": "css/home.css",
+      "sha256": "4a199806d25a60e888791e3c69b0cc32474365c217c2e8e1bd42c8b8a718d960"
+    }
+  ]
+}

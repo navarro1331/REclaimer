@@ -1,0 +1,14 @@
+{
+  "mode": "local",
+  "background": false,
+  "api": "http://127.0.0.1:11434",
+  "llamaServer": "runtime/llama-server.exe",
+  "contextSize": 2048,
+  "threads": 4,
+  "gpuLayers": 0,
+  "models": [],
+  "embeddingModel": "",
+  "kvCacheType": "f16",
+  "web": { "enabled": true, "port": 0, "lan": false, "root": "web" },
+  "gaboSync": { "enabled": false, "notifications": true, "origin": "", "profile": "", "browser": "", "file": "", "intervalSeconds": 60, "modelAliases": {} }
+}

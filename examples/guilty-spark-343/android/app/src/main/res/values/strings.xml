@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Guilty Spark 343</string>
+    <string name="eyebrow">YOUR PERSONAL AI COMPANION</string>
+    <string name="hero_title">Hello, Reclaimer.</string>
+    <string name="hero_subtitle">Your models. Your conversations.\nConnected on your terms.</string>
+    <string name="ready_label">READY WHEN YOU ARE</string>
+    <string name="connection_title">Connect to your Spark</string>
+    <string name="connection_description">Add the address of your Guilty Spark server. You can save it now and connect when your Nebula network is ready.</string>
+    <string name="server_label">Server address</string>
+    <string name="server_hint">http://10.x.x.x:34343</string>
+    <string name="server_help">Use the private IP and port shown in the desktop app’s Phone connection screen, or an HTTPS address.</string>
+    <string name="connect">Connect</string>
+    <string name="save_later">Save for later</string>
+    <string name="network_title">Made for your private network</string>
+    <string name="network_description">Nebula connects your phone to your server. Turn it on when you’re ready, then come back here. This app uses that connection.</string>
+    <string name="privacy_description">Your models run on your server. Your access code is entered directly in its sign-in screen.</string>
+    <string name="footer">GUILTY SPARK 343  ·  ANDROID 0.1.0</string>
+    <string name="checking">Looking for your Spark…</string>
+    <string name="saved">Address saved. Connect whenever your server is ready.</string>
+    <string name="more_options" translatable="false">⋮</string>
+    <string name="connection_settings">Connection settings</string>
+    <string name="workspace_options">Workspace options</string>
+    <string name="reload">Reload workspace</string>
+    <string name="open_browser">Open in browser</string>
+    <string name="sign_out">Sign out</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="sign_out_question">Sign out of this server on this phone? Your saved server address and server conversations will stay available.</string>
+    <string name="open_external_question">Open this link in your browser?</string>
+    <string name="download_help">To export or download workspace files, use “Open in browser” from the menu.</string>
+    <string name="ssl_error">The server’s secure connection could not be verified. Check its certificate or use its private Nebula IP with HTTP.</string>
+    <string name="offline_error">Your Spark is out of reach. Check that the server is running and your phone is connected to Nebula or the same private network.</string>
+    <string name="web_error">The workspace could not load. Check your connection and try again.</string>
+    <string name="renderer_error">The workspace closed unexpectedly. Reconnect to restore it from your server.</string>
+    <string name="no_browser">No browser is available to open this link.</string>
+    <string name="leave_workspace">Return to connection settings? Your conversations stay on your server. An unsent message may need to be entered again.</string>
+    <string name="choose_file">Choose an attachment</string>
+</resources>
